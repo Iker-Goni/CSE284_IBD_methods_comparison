@@ -1,0 +1,7 @@
+data/
+*.bed
+*.bim
+*.fam
+*.genome
+*.log
+*.nosex
