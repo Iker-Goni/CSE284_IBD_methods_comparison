@@ -1,7 +1,7 @@
 #!/bin/bash
 
 for chr in {1..22}; do
-    plink2 \
+    ../../plink_2/plink2 \
         --vcf ../data/ps2_ibd_phased.vcf.gz \
         --chr ${chr} \
         --recode ped \
