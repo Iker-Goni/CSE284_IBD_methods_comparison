@@ -1,0 +1,2392 @@
+beagle.27Feb25.75f.jar (version 5.5)
+Copyright (C) 2014-2024 Brian L. Browning
+Enter "java -jar beagle.27Feb25.75f.jar" to list command line argument
+Start time: 03:56 AM UTC on 04 Mar 2026
+
+Command line: java -Xmx2048m -jar beagle.27Feb25.75f.jar
+  gt=../data/ps2_ibd.lwk.vcf
+  out=../data/ps2_ibd_phased
+  map=../data/maps/combined_map.map
+  nthreads=2
+
+Reference samples:                    0
+Study     samples:                   97
+
+Window 1 [1:752566-19636041]
+Study     markers:                6,758
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  21935
+Estimated err:                 2.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 2 [1:18904033-55078046]
+Study     markers:               10,947
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24940
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 3 [1:53878651-88860530]
+Study     markers:               12,353
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24973
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 4 [1:87803200-145755813]
+Study     markers:               11,173
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  20238
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 5 [1:121346616-179564171]
+Study     markers:               10,985
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  17652
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 6 [1:177074669-215850892]
+Study     markers:               12,148
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23010
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 7 [1:213952574-241264216]
+Study     markers:               10,266
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24816
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 8 [1:240670490-249218992]
+Study     markers:                3,022
+
+Burnin  iteration 1:           2 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  24034
+Estimated err:                 2.5e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 9 [2:18674-18142133]
+Study     markers:                6,876
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  19408
+Estimated err:                 2.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 10 [2:16403550-49114584]
+Study     markers:               12,206
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23734
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 11 [2:47323432-87965359]
+Study     markers:               13,639
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           4 seconds
+
+Estimated ne:                  24225
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 12 [2:85492391-134727667]
+Study     markers:               11,547
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  21168
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 13 [2:133554288-177389867]
+Study     markers:               13,324
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23630
+Estimated err:                 1.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 14 [2:175370443-220714502]
+Study     markers:               13,030
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  21982
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 15 [2:218923606-242795942]
+Study     markers:                8,535
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  22903
+Estimated err:                 2.1e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 16 [2:241382083-243048760]
+Study     markers:                  496
+
+Burnin  iteration 1:           0 seconds
+Burnin  iteration 2:           0 seconds
+Burnin  iteration 3:           0 seconds
+
+Estimated ne:                  21730
+Estimated err:                 2.5e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 17 [3:61495-21641957]
+Study     markers:                9,573
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24921
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 18 [3:19788213-60299260]
+Study     markers:               13,156
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24563
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 19 [3:59463037-105380911]
+Study     markers:               12,792
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23746
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           2 seconds
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 20 [3:103440905-143493643]
+Study     markers:               12,627
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22975
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 21 [3:141882459-182315570]
+Study     markers:               11,342
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22536
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 22 [3:180368253-197838262]
+Study     markers:                5,551
+
+Burnin  iteration 1:           4 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  22554
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 23 [4:71566-22793528]
+Study     markers:                7,840
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  22287
+Estimated err:                 2.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 24 [4:20877718-60730605]
+Study     markers:               10,667
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23665
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 25 [4:58012501-106486584]
+Study     markers:               13,125
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24137
+Estimated err:                 1.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 26 [4:103340510-151070611]
+Study     markers:               12,349
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22852
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 27 [4:148659137-182290596]
+Study     markers:                9,938
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22422
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 28 [4:181441435-190936728]
+Study     markers:                3,763
+
+Burnin  iteration 1:           3 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  22367
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 29 [5:27564-24855099]
+Study     markers:                8,829
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23593
+Estimated err:                 2.1e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 30 [5:22812264-68828296]
+Study     markers:               12,646
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24772
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 31 [5:67275356-113009026]
+Study     markers:               12,437
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  25132
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 32 [5:110467237-149495253]
+Study     markers:               12,447
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23103
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 33 [5:148683087-174957482]
+Study     markers:                9,641
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23121
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 34 [5:174405982-180696889]
+Study     markers:                2,095
+
+Burnin  iteration 1:           1 second
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  21861
+Estimated err:                 2.5e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 35 [6:180959-21471086]
+Study     markers:                8,979
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  24768
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 36 [6:20111100-57330320]
+Study     markers:               18,401
+
+Burnin  iteration 1:           12 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           4 seconds
+
+Estimated ne:                  24125
+Estimated err:                 1.5e-03
+
+Phasing iteration 1:           2 seconds
+Phasing iteration 2:           2 seconds
+Phasing iteration 3:           2 seconds
+Phasing iteration 4:           2 seconds
+Phasing iteration 5:           2 seconds
+Phasing iteration 6:           2 seconds
+Phasing iteration 7:           2 seconds
+Phasing iteration 8:           2 seconds
+Phasing iteration 9:           2 seconds
+Phasing iteration 10:          2 seconds
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 37 [6:53860598-110653700]
+Study     markers:               14,987
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           4 seconds
+
+Estimated ne:                  24781
+Estimated err:                 1.5e-03
+
+Phasing iteration 1:           2 seconds
+Phasing iteration 2:           1 second
+Phasing iteration 3:           2 seconds
+Phasing iteration 4:           1 second
+Phasing iteration 5:           2 seconds
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 38 [6:108407662-149606801]
+Study     markers:               12,564
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23072
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 39 [6:148671794-170919470]
+Study     markers:                9,696
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23610
+Estimated err:                 2.1e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 40 [7:44935-22506694]
+Study     markers:                9,613
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  24609
+Estimated err:                 2.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 41 [7:21680935-53467605]
+Study     markers:               11,823
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23160
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 42 [7:51512678-102531311]
+Study     markers:               12,671
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22307
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 43 [7:99474427-141885203]
+Study     markers:               11,957
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24111
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 44 [7:140213880-159119486]
+Study     markers:                6,164
+
+Burnin  iteration 1:           4 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  22871
+Estimated err:                 2.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 45 [8:164984-18937033]
+Study     markers:               11,206
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24192
+Estimated err:                 2.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 46 [8:17977230-59979252]
+Study     markers:               12,041
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  25326
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 47 [8:58453913-103715303]
+Study     markers:               12,780
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  25187
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 48 [8:102471246-138057367]
+Study     markers:               11,737
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  26391
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 49 [8:136024190-146293414]
+Study     markers:                3,514
+
+Burnin  iteration 1:           2 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  24941
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 50 [9:185632-19754476]
+Study     markers:               10,431
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  26608
+Estimated err:                 2.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 51 [9:18708788-80294359]
+Study     markers:               10,808
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22105
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 52 [9:79219334-112583729]
+Study     markers:               11,663
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22938
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 53 [9:110969574-137039240]
+Study     markers:                9,661
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  22408
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 54 [9:136532183-141066491]
+Study     markers:                1,772
+
+Burnin  iteration 1:           1 second
+Burnin  iteration 2:           0 seconds
+Burnin  iteration 3:           0 seconds
+
+Estimated ne:                  21144
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 55 [10:98087-18542339]
+Study     markers:                9,419
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24060
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 56 [10:17068275-54832274]
+Study     markers:               11,019
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  20260
+Estimated err:                 1.9e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 57 [10:53808598-90736399]
+Study     markers:               13,038
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24115
+Estimated err:                 1.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 58 [10:88794870-123901964]
+Study     markers:               12,488
+
+Burnin  iteration 1:           9 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23629
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 59 [10:123096747-135447971]
+Study     markers:                5,794
+
+Burnin  iteration 1:           4 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  22602
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 60 [11:198510-22711977]
+Study     markers:                9,827
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  22609
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 61 [11:21378056-71063519]
+Study     markers:               14,001
+
+Burnin  iteration 1:           10 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           4 seconds
+
+Estimated ne:                  23783
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 62 [11:69812716-112658438]
+Study     markers:               14,316
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           4 seconds
+
+Estimated ne:                  25107
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           2 seconds
+Phasing iteration 4:           2 seconds
+Phasing iteration 5:           2 seconds
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 63 [11:110702636-133089795]
+Study     markers:                9,045
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23572
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 64 [11:132584448-134940416]
+Study     markers:                1,139
+
+Burnin  iteration 1:           1 second
+Burnin  iteration 2:           0 seconds
+Burnin  iteration 3:           0 seconds
+
+Estimated ne:                  22632
+Estimated err:                 2.5e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 65 [12:191619-22151573]
+Study     markers:                8,978
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  24022
+Estimated err:                 2.1e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 66 [12:20524202-65091314]
+Study     markers:               14,158
+
+Burnin  iteration 1:           10 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           4 seconds
+
+Estimated ne:                  23501
+Estimated err:                 1.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 67 [12:63191273-99308282]
+Study     markers:               11,312
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  20867
+Estimated err:                 1.8e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 68 [12:97722814-127382559]
+Study     markers:               10,363
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23384
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 69 [12:126444520-133777645]
+Study     markers:                3,496
+
+Burnin  iteration 1:           2 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  24247
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 70 [13:19198770-40916927]
+Study     markers:                8,895
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  22493
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 71 [13:39984967-81894932]
+Study     markers:               14,042
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24620
+Estimated err:                 1.5e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 72 [13:79556040-110718891]
+Study     markers:               12,110
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  25802
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 73 [13:109687009-115103529]
+Study     markers:                2,308
+
+Burnin  iteration 1:           2 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  22123
+Estimated err:                 3.6e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 74 [14:19255726-42718306]
+Study     markers:                8,186
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  21950
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 75 [14:38711614-80999842]
+Study     markers:               14,148
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           4 seconds
+Burnin  iteration 3:           4 seconds
+
+Estimated ne:                  25935
+Estimated err:                 1.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 76 [14:78921353-104843394]
+Study     markers:                9,535
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  24326
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 77 [14:103046326-107287663]
+Study     markers:                  837
+
+Burnin  iteration 1:           1 second
+Burnin  iteration 2:           0 seconds
+Burnin  iteration 3:           0 seconds
+
+Estimated ne:                  12215
+Estimated err:                 4.3e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 78 [15:20034919-32620127]
+Study     markers:                2,985
+
+Burnin  iteration 1:           2 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  10408
+Estimated err:                 4.3e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 79 [15:31428256-63036363]
+Study     markers:               11,251
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  23863
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 80 [15:61699175-93696464]
+Study     markers:               10,407
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  25498
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 81 [15:93005196-102398631]
+Study     markers:                4,452
+
+Burnin  iteration 1:           3 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  24966
+Estimated err:                 2.7e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 82 [16:88165-19244424]
+Study     markers:                7,848
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23243
+Estimated err:                 2.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 83 [16:18062136-58942066]
+Study     markers:                8,091
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  20771
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 84 [16:57698931-84362990]
+Study     markers:               10,484
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  22692
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 85 [16:83854596-90163275]
+Study     markers:                3,359
+
+Burnin  iteration 1:           2 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  23946
+Estimated err:                 3.7e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 86 [17:8547-15016299]
+Study     markers:                6,408
+
+Burnin  iteration 1:           4 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23345
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 87 [17:14388691-54378732]
+Study     markers:               10,250
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  24457
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 88 [17:53276874-76482256]
+Study     markers:                7,787
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23149
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 89 [17:75741480-81051007]
+Study     markers:                1,907
+
+Burnin  iteration 1:           1 second
+Burnin  iteration 2:           0 seconds
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  19493
+Estimated err:                 2.9e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 90 [18:69836-15249516]
+Study     markers:                6,137
+
+Burnin  iteration 1:           4 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  21867
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 91 [18:13520356-56888756]
+Study     markers:               13,027
+
+Burnin  iteration 1:           7 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  24482
+Estimated err:                 1.6e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 92 [18:55844759-76759737]
+Study     markers:                8,960
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23520
+Estimated err:                 2.1e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 93 [18:75971836-78015180]
+Study     markers:                  701
+
+Burnin  iteration 1:           1 second
+Burnin  iteration 2:           0 seconds
+Burnin  iteration 3:           0 seconds
+
+Estimated ne:                  21994
+Estimated err:                 2.1e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           0 seconds
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 94 [19:260912-16200378]
+Study     markers:                5,334
+
+Burnin  iteration 1:           3 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  21228
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 95 [19:15012726-48743469]
+Study     markers:                8,967
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  21866
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 96 [19:47851021-59097160]
+Study     markers:                4,426
+
+Burnin  iteration 1:           3 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  21915
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           0 seconds
+Phasing iteration 2:           1 second
+Phasing iteration 3:           0 seconds
+Phasing iteration 4:           0 seconds
+Phasing iteration 5:           0 seconds
+Phasing iteration 6:           0 seconds
+Phasing iteration 7:           0 seconds
+Phasing iteration 8:           0 seconds
+Phasing iteration 9:           0 seconds
+Phasing iteration 10:          0 seconds
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 97 [20:63244-17039959]
+Study     markers:                7,857
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23024
+Estimated err:                 2.2e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 98 [20:16009257-51509275]
+Study     markers:               11,066
+
+Burnin  iteration 1:           8 seconds
+Burnin  iteration 2:           3 seconds
+Burnin  iteration 3:           3 seconds
+
+Estimated ne:                  21422
+Estimated err:                 2.0e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 99 [20:50167467-62912463]
+Study     markers:                5,595
+
+Burnin  iteration 1:           4 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  22988
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          0 seconds
+
+Window 100 [21:14601415-37996897]
+Study     markers:                8,590
+
+Burnin  iteration 1:           6 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23646
+Estimated err:                 2.3e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 101 [21:36415087-48100155]
+Study     markers:                5,205
+
+Burnin  iteration 1:           3 seconds
+Burnin  iteration 2:           1 second
+Burnin  iteration 3:           1 second
+
+Estimated ne:                  23729
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          0 seconds
+Phasing iteration 12:          0 seconds
+
+Window 102 [22:16494187-35876888]
+Study     markers:                7,118
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  19834
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Window 103 [22:34387510-51211392]
+Study     markers:                7,118
+
+Burnin  iteration 1:           5 seconds
+Burnin  iteration 2:           2 seconds
+Burnin  iteration 3:           2 seconds
+
+Estimated ne:                  23667
+Estimated err:                 2.4e-03
+
+Phasing iteration 1:           1 second
+Phasing iteration 2:           1 second
+Phasing iteration 3:           1 second
+Phasing iteration 4:           1 second
+Phasing iteration 5:           1 second
+Phasing iteration 6:           1 second
+Phasing iteration 7:           1 second
+Phasing iteration 8:           1 second
+Phasing iteration 9:           1 second
+Phasing iteration 10:          1 second
+Phasing iteration 11:          1 second
+Phasing iteration 12:          1 second
+
+Cumulative Statistics:
+
+Study     markers:              911,045
+
+Haplotype phasing time:        37 minutes 21 seconds
+Total time:                    38 minutes 7 seconds
+
+End time: 04:34 AM UTC on 04 Mar 2026
+beagle.27Feb25.75f.jar finished
