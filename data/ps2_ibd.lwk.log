@@ -1,0 +1,23 @@
+PLINK v1.90b6.9 64-bit (4 Mar 2019)
+Options in effect:
+  --bfile ps2_ibd.lwk
+  --out ps2_ibd.lwk
+  --recode vcf
+
+Hostname: dsmlp-jupyter-kuyim
+Working directory: /home/kuyim/Project/CSE284_IBD_methods_comparison/data
+Start time: Tue Mar  3 21:01:31 2026
+
+Random number seed: 1772571691
+515764 MB RAM detected; reserving 257882 MB for main workspace.
+911045 variants loaded from .bim file.
+97 people (0 males, 0 females, 97 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ps2_ibd.lwk.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 97 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+911045 variants and 97 people pass filters and QC.
+Note: No phenotypes present.
+--recode vcf to ps2_ibd.lwk.vcf ... done.
+
+End time: Tue Mar  3 21:01:32 2026
