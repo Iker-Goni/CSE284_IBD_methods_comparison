@@ -1,0 +1,42 @@
+beagle.27Jan18.7e1.jar (version 4.1)
+Copyright (C) 2014-2015 Brian L. Browning
+Enter "java -jar beagle.27Jan18.7e1.jar" for a summary of command line arguments.
+Start time: 04:40 AM UTC on 04 Mar 2026
+
+Command line: java -Xmx4096m -jar beagle.jar
+  gt=../data/ps2_ibd_phased.vcf.gz
+  chrom=3
+  map=../data/maps/chr3.map
+  out=../data/beagle/ps2_ibd_chr3
+  ibd=true
+
+reference samples:       0
+target samples:         97
+
+Window 1 [ 3:61495-156329725 ]
+target markers:      50000
+
+Refined IBD
+model scale: 2.00
+run time:    4 seconds
+
+mean edges/level: 7      max edges/level: 16
+mean edges/node:  1.310  mean count/edge: 28
+
+Window 2 [ 3:146504254-197838262 ]
+target markers:      15060
+
+Refined IBD
+model scale: 2.00
+run time:    1 second
+
+mean edges/level: 7      max edges/level: 16
+mean edges/node:  1.324  mean count/edge: 28
+
+Number of markers:               62060
+Total time for building model: 2 seconds
+Total time for IBD detection:  5 seconds
+Total run time:                9 seconds
+
+End time: 04:40 AM UTC on 04 Mar 2026
+beagle.27Jan18.7e1.jar (version 4.1) finished
