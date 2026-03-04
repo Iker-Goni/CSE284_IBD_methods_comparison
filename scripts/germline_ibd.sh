@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# This is code for if the vcf -> ped conversion actually works, which it isn't rn
 for chr in {21..22}; do
     ~/Project/germline/germline \
         -input ../data/germline/peds/ps2_ibd_chr${chr}_germline.ped \
