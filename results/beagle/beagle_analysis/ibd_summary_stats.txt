@@ -1,0 +1,29 @@
+BEAGLE 4.1 IBD Analysis Summary
+============================================================
+
+Analysis date: 2026-03-05 04:46
+Filter settings: LOD ≥ 3.0
+
+SEGMENT STATISTICS
+------------------------------
+Total segments detected: 75,737
+Mean segment length: 2.152 Mb
+Median segment length: 1.526 Mb
+Total IBD across all segments: 162968.13 Mb
+
+PAIRWISE STATISTICS
+------------------------------
+Total pairs with IBD: 4,656
+Mean IBD per pair: 33.935 Mb
+Median IBD per pair: 23.226 Mb
+Max IBD per pair: 2555.096 Mb
+
+IBD PERCENTILES (per pair)
+------------------------------
+  10th percentile: 12.844 Mb
+  25th percentile: 17.180 Mb
+  50th percentile: 23.226 Mb
+  75th percentile: 30.672 Mb
+  90th percentile: 41.280 Mb
+  95th percentile: 53.061 Mb
+  99th percentile: 217.367 Mb
