@@ -10,7 +10,8 @@ The dataset that we will be analyzing is the 1000 Genomes Phase 3 release, consi
 
 ## Dependencies
 
-## Instructions to run scripts
+## Instructions to reproduce results
+
 
 ## Results so far
 
