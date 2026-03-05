@@ -66,7 +66,7 @@ python3 plot_pihat_distribution.py
 ## Results so far
 Currently we have computed the pi_hat distributions using plink, as well as cumulative IBD distribution from Beagle:
 ![pi_hat distribution](results/pihat_distribution.png)
-![beagle_distribution](beagle/cumulative_ibd_distribution.png)
+![beagle_distribution](results/beagle/cumulative_ibd_distribution.png)
 
 ## Remaining work to complete
 There is currently a large discrepancy between the total number of segments, mean segment length, median segment length, and max segment length computed by germline as opposed to Beagle. We believe it is an issue with the input .ped file and will work to correct it. Some other future steps include:
