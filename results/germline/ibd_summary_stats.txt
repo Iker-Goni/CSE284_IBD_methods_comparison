@@ -1,0 +1,27 @@
+Germline IBD Analysis Summary
+============================================================
+
+Analysis date: 2026-03-05 05:46
+SEGMENT STATISTICS
+------------------------------
+Total segments detected: 20,218,066
+Mean segment length: 154.702 Mb
+Median segment length: 146.293 Mb
+Total IBD across all segments: 3127768102.95 Mb
+
+PAIRWISE STATISTICS
+------------------------------
+Total pairs with IBD: 4,656
+Mean IBD per pair: 12.802 Mb
+Median IBD per pair: 24.137 Mb
+Max IBD per pair: 161.962 Mb
+
+IBD PERCENTILES (per pair)
+------------------------------
+  10th percentile: 0.000 Mb
+  25th percentile: 0.000 Mb
+  50th percentile: 24.137 Mb
+  75th percentile: 25.043 Mb
+  90th percentile: 25.242 Mb
+  95th percentile: 25.406 Mb
+  99th percentile: 28.142 Mb
