@@ -14,7 +14,10 @@ pip install matplotlib
 pip install pandas
 ```
 ## Instructions to reproduce results
+For reference, all scripts should be run from the root directory in order to run properly. Download plink v1.9, germline, Beagle 4.1, and Beagle 5.5 from their respective websites and store them in a directory ```tools/```
+
 ### Obtain VCF file
+
 
 ### Get and process map files
 
@@ -32,3 +35,4 @@ pip install pandas
 There is currently a large discrepancy between the total number of segments, mean segment length, median segment length, and max segment length computed by germline as opposed to Beagle. We believe it is an issue with the input .ped file and will work to correct it. Some other future steps include:
 - Comparing runtime of each method
 - Estimating pi_hat from germline and Beagle results and comparing to plink
+- Update readme with the new results and guidance of peer reviewers
