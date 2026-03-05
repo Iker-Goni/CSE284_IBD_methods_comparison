@@ -6,7 +6,7 @@ import os
 
 # Configure paths and gather files
 BEAGLE_DIR = "data/beagle"
-OUTPUT_DIR = "results/beagle/beagle_analysis"
+OUTPUT_DIR = "results/beagle"
 MIN_LOD = 3.0 # Standard value
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
