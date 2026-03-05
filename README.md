@@ -9,9 +9,22 @@ The dataset that we will be analyzing is the 1000 Genomes Phase 3 release, consi
 ## Repository structure
 
 ## Dependencies
-
+```
+pip install matplotlib
+pip install pandas
+```
 ## Instructions to reproduce results
+### Obtain VCF file
 
+### Get and process map files
+
+### Phase VCF file 
+
+### Convert VCF to .ped file for germline
+
+### Compute IBD with the 3 tools
+
+### Analyze results
 
 ## Results so far
 
