@@ -11,7 +11,7 @@ plink \
   --out data/germline_input
 
 # Step 2: Run GERMLINE on converted data
-./germline/germline \
+./tools/germline/germline \
   -input data/germline_input.ped data/germline_input.map \
   -output results/germline_out \
   -min_m 3 \

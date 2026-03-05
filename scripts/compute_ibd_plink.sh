@@ -4,10 +4,10 @@
 set -e
 
 # Input prefix (no extension)
-INPUT_PREFIX="../data/ps2_ibd.lwk"
+INPUT_PREFIX="data/ps2_ibd.lwk"
 
 # Output prefix
-OUTPUT_PREFIX="../results/plink_ibd"
+OUTPUT_PREFIX="results/plink_ibd"
 
 echo "Running PLINK IBD calculation..."
 echo "Input:  $INPUT_PREFIX"
