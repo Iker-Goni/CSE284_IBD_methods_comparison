@@ -13,8 +13,10 @@ The dataset that we will be analyzing is the 1000 Genomes Phase 3 release, consi
 pip install matplotlib
 pip install pandas
 ```
+plink v1.9, germline, Beagle 4.1, and Beagle 5.5 are also required. Follow the steps below for installation.
+
 ## Instructions to reproduce results
-For reference, all scripts should be run from the root directory (unless otherwise specified) in order to run properly. Download plink v1.9, germline, Beagle 4.1, and Beagle 5.5 from their respective websites and store them in a directory ```tools/```
+For reference, all scripts should be run from the root directory (unless otherwise specified) in order to run properly. Download plink v1.9, germline, Beagle 4.1, and Beagle 5.5 from their respective websites and store them in a directory ```tools/```. 
 
 ### Obtain VCF file
 We started with the ps2 data from problem 3 in .bed, .bim, and .fam format, which you can find in ```data/```. First the data must be converted to a VCF file:
@@ -49,7 +51,11 @@ bash scripts/phase.sh
 ```
 bash scripts/germline_pipeline.sh
 ```
-
+This script creates a file called germline_input.ped in the data folder. Note that the data folder in this repository contains the .gz file for data/germline_input.ped as this file is too large for git to push. If you wish to unzip this file and begin the analysis from this step without running the above commands, run the bash command:
+```
+gunzip data/germline_input.ped.gz
+```
+and continue from here.
 ### Compute IBD with the other 2 tools
 ```
 bash scripts/beagle_ibd.sh
