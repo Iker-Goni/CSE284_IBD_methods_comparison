@@ -6,17 +6,19 @@ import os
 import numpy as np
 
 # Configure paths and gather files
-GERMLINE_FILE = "results/germline_out.match"
+GERMLINE_FILE = "data/lwk_ibd.match"
 OUTPUT_DIR = "results/germline"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 colnames = [
     "fid1","iid1","fid2","iid2","chr","start","end",
-    "snp1","snp2","nsnp","length_mb","unit",
+    "snp1","snp2","nsnp","error","unit",
     "err1","err2","err3"
            ]
 
-df = pd.read_csv(GERMLINE_FILE, sep=r"\s+", names=colnames)
+raw_df = pd.read_csv(GERMLINE_FILE, sep=r"\s+", names=colnames)
+raw_df['length_mb'] = (raw_df["end"] - raw_df["start"]) / 1000000
+df = raw_df[raw_df['length_mb'] >= 0.001]
 print(f"\nTotal segments read: {len(df):,}")
 print(f"Mean segment length: {df['length_mb'].mean():.3f} Mb")
 print(f"Median segment length: {df['length_mb'].median():.3f} Mb")
@@ -66,6 +68,13 @@ print(f"Total unique pairs with IBD sharing: {len(pair_ibd):,}")
 print(f"\nTop 10 pairs by IBD sharing:")
 print(pair_ibd.head(10))
 
+# Estimate pi_hat value from IBD results
+genome_length = 3200 # in Mb
+pair_ibd['pi_hat'] = pair_ibd['total_ibd_mb'] / genome_length
+print(f"\nPi_hat statistics:")
+print(f"  Mean pi_hat: {pair_ibd['pi_hat'].mean():.6f}")
+print(f"  Median pi_hat: {pair_ibd['pi_hat'].median():.6f}")
+print(f"  Max pi_hat: {pair_ibd['pi_hat'].max():.6f}")
 
 
 print("\nCreating distribution plots...")
@@ -75,7 +84,7 @@ fig, axes = plt.subplots(2, 1, figsize=(14, 12))
 axes[0].hist(pair_ibd['total_ibd_mb'], bins=50, color='steelblue', edgecolor='black', alpha=0.7)
 axes[0].set_xlabel('Cumulative IBD Sharing (Mb)', fontsize=12)
 axes[0].set_ylabel('Number of Pairs', fontsize=12)
-axes[0].set_title('Distribution of Total IBD Sharing per Pair', fontsize=14)
+axes[0].set_title('Germline Total IBD Sharing per Pair', fontsize=14)
 axes[0].grid(True, alpha=0.3)
 axes[0].axvline(pair_ibd['total_ibd_mb'].median(), color='red', linestyle='--', 
                    label=f"Median: {pair_ibd['total_ibd_mb'].median():.2f} Mb")
@@ -87,7 +96,7 @@ axes[0].legend()
 axes[1].hist(pair_ibd['total_ibd_mb'], bins=50, color='coral', edgecolor='black', alpha=0.7)
 axes[1].set_xlabel('Cumulative IBD Sharing (Mb)', fontsize=12)
 axes[1].set_ylabel('Number of Pairs (log scale)', fontsize=12)
-axes[1].set_title('Distribution of Total IBD Sharing per Pair (Log Scale)', fontsize=14)
+axes[1].set_title('Germline Total IBD Sharing per Pair (Log Scale)', fontsize=14)
 axes[1].set_yscale('log')
 axes[1].grid(True, alpha=0.3)
 
@@ -111,7 +120,7 @@ bars = ax.bar(chrom_ibd['chromosome'].astype(str), chrom_ibd['total_ibd_mb'],
               color='darkorange', alpha=0.7, edgecolor='black')
 ax.set_xlabel('Chromosome', fontsize=12)
 ax.set_ylabel('Total IBD (Mb)', fontsize=12)
-ax.set_title('Total IBD Contribution by Chromosome', fontsize=14)
+ax.set_title('Germline Total IBD Contribution by Chromosome', fontsize=14)
 ax.grid(True, alpha=0.3, axis='y')
 
 # Add percentage labels
@@ -122,6 +131,30 @@ for bar, pct in zip(bars, chrom_ibd['percentage']):
 
 plt.tight_layout()
 plt.savefig(os.path.join(OUTPUT_DIR, 'ibd_by_chromosome.png'), dpi=150)
+
+# Create pi_hat distribution plots (normal and log)
+fig, axes = plt.subplots(2, 1, figsize=(14, 12))
+axes[0].hist(pair_ibd['pi_hat'], bins=50, color='steelblue', edgecolor='black', alpha=0.7)
+axes[0].set_xlabel('Pi_hat', fontsize=12)
+axes[0].set_ylabel('Number of Pairs', fontsize=12)
+axes[0].set_title('Germline Pi_hat Values', fontsize=14)
+axes[0].grid(True, alpha=0.3)
+axes[0].axvline(pair_ibd['pi_hat'].median(), color='red', linestyle='--', 
+                label=f"Median: {pair_ibd['pi_hat'].median():.4f}")
+axes[0].axvline(pair_ibd['pi_hat'].mean(), color='green', linestyle='--', 
+                label=f"Mean: {pair_ibd['pi_hat'].mean():.4f}")
+axes[0].legend()
+
+axes[1].hist(pair_ibd['pi_hat'], bins=50, color='coral', edgecolor='black', alpha=0.7)
+axes[1].set_xlabel('Pi_hat', fontsize=12)
+axes[1].set_ylabel('Number of Pairs', fontsize=12)
+axes[1].set_title('Germline Pi_hat Distribution (Log Scale)', fontsize=14)
+axes[1].set_yscale('log')
+axes[1].grid(True, alpha=0.3)
+
+plt.tight_layout()
+plt.savefig(os.path.join(OUTPUT_DIR, 'pi_hat_distribution.png'), dpi=150)
+print(f"Pi_hat distribution plots saved to {OUTPUT_DIR}/pi_hat_distribution.png")
 
 
 print("\nExporting results...")
@@ -159,6 +192,23 @@ with open(summary_file, 'w') as f:
     for p in [10, 25, 50, 75, 90, 95, 99]:
         percentile_val = pair_ibd['total_ibd_mb'].quantile(p/100)
         f.write(f"  {p}th percentile: {percentile_val:.3f} Mb\n")
+        
+    f.write("\n\nPI_HAT STATISTICS\n")
+    f.write("-" * 30 + "\n")
+    f.write(f"Genome length used for pi_hat: {genome_length:.0f} Mb\n")
+    f.write(f"Mean pi_hat: {pair_ibd['pi_hat'].mean():.6f}\n")
+    f.write(f"Median pi_hat: {pair_ibd['pi_hat'].median():.6f}\n")
+    f.write(f"Max pi_hat: {pair_ibd['pi_hat'].max():.6f}\n")
+    f.write(f"Min pi_hat (>0): {pair_ibd[pair_ibd['pi_hat'] > 0]['pi_hat'].min():.6f}\n\n")
+    
+    f.write("PI_HAT PERCENTILES\n")
+    f.write("-" * 30 + "\n")
+    for p in [10, 25, 50, 75, 90, 95, 99, 99.5, 99.9]:
+        percentile_val = pair_ibd['pi_hat'].quantile(p/100)
+        f.write(f"  {p}th percentile: {percentile_val:.6f}\n")
+        
+    pair_ibd[['sample_a', 'sample_b', 'total_ibd_mb', 'pi_hat']].to_csv(
+    os.path.join(OUTPUT_DIR, 'pairwise_pi_hat.csv'), index=False)
 
 print(f"  Summary statistics saved to {summary_file}")
 

@@ -3,14 +3,15 @@
 set -e
 set -o pipefail
 
-PHASE_PREFIX="lwk_phased"
-GERMLINE_OUT="lwk_ibd"
+PHASE_PREFIX="data/lwk_phased"
+GERMLINE_OUT="data/lwk_ibd"
 
+# adjust bits if you have memory issues
 echo "=== Step 1: Run GERMLINE ==="
-../germline/germline \
+tools/germline/germline \
   -input ${PHASE_PREFIX}.ped ${PHASE_PREFIX}.map \
   -output ${GERMLINE_OUT} \
-  -bits 64 \   # adjust bits if you have memory issues
+  -bits 8 \
   -min_m 3
 
 echo "=== Step 2: Calculate average segment length (MB) excluding self-matches ==="

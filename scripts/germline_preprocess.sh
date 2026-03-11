@@ -4,11 +4,11 @@ set -e
 set -o pipefail
 
 # Define prefixes
-RAW_PREFIX="ps2_ibd.lwk"
-QC_PREFIX="lwk_qc"
-PRUNE_PREFIX="lwk_prune"
-LD_PREFIX="lwk_ld"
-PHASE_PREFIX="lwk_phased"
+RAW_PREFIX="data/ps2_ibd.lwk"
+QC_PREFIX="data/lwk_qc"
+PRUNE_PREFIX="data/lwk_prune"
+LD_PREFIX="data/lwk_ld"
+PHASE_PREFIX="data/lwk_phased"
 
 echo "=== Step 1: QC filtering ==="
 plink \
@@ -38,8 +38,8 @@ plink \
   --out ${LD_PREFIX}
 
 echo "=== Step 5: Phase with Beagle ==="
-java -jar beagle.27Feb25.75f.jar \
-  gt=${LD_PREFIX}.vcf.gz \
+java -jar tools/beagle/beagle.27Feb25.75f.jar \
+  gt=${LD_PREFIX}.vcf \
   out=${PHASE_PREFIX}
 
 echo "=== Step 6: Filter multi-allelic SNPs ==="
