@@ -4,6 +4,7 @@ import gzip
 import glob
 import os
 import numpy as np
+from scipy import stats
 
 # Configure paths and gather files
 BEAGLE_DIR = "data/beagle"
@@ -85,16 +86,22 @@ print(f"Total unique pairs with IBD sharing: {len(pair_ibd):,}")
 print(f"\nTop 10 pairs by IBD sharing:")
 print(pair_ibd.head(10))
 
-
+# Estimate pi_hat value from IBD results
+genome_length = 3200 # in Mb
+pair_ibd['pi_hat'] = pair_ibd['total_ibd_mb'] / genome_length
+print(f"\nPi_hat statistics:")
+print(f"  Mean pi_hat: {pair_ibd['pi_hat'].mean():.6f}")
+print(f"  Median pi_hat: {pair_ibd['pi_hat'].median():.6f}")
+print(f"  Max pi_hat: {pair_ibd['pi_hat'].max():.6f}")
 
 print("\nCreating distribution plots...")
 fig, axes = plt.subplots(2, 1, figsize=(14, 12))
 
-# Histogram with cumulative IBD per pair
+# Histogram with total IBD per pair
 axes[0].hist(pair_ibd['total_ibd_mb'], bins=50, color='steelblue', edgecolor='black', alpha=0.7)
 axes[0].set_xlabel('Cumulative IBD Sharing (Mb)', fontsize=12)
 axes[0].set_ylabel('Number of Pairs', fontsize=12)
-axes[0].set_title('Distribution of Total IBD Sharing per Pair', fontsize=14)
+axes[0].set_title('Beagle Total IBD Sharing per Pair', fontsize=14)
 axes[0].grid(True, alpha=0.3)
 axes[0].axvline(pair_ibd['total_ibd_mb'].median(), color='red', linestyle='--', 
                    label=f"Median: {pair_ibd['total_ibd_mb'].median():.2f} Mb")
@@ -106,7 +113,7 @@ axes[0].legend()
 axes[1].hist(pair_ibd['total_ibd_mb'], bins=50, color='coral', edgecolor='black', alpha=0.7)
 axes[1].set_xlabel('Cumulative IBD Sharing (Mb)', fontsize=12)
 axes[1].set_ylabel('Number of Pairs (log scale)', fontsize=12)
-axes[1].set_title('Distribution of Total IBD Sharing per Pair (Log Scale)', fontsize=14)
+axes[1].set_title('Beagle Total IBD Sharing per Pair (Log Scale)', fontsize=14)
 axes[1].set_yscale('log')
 axes[1].grid(True, alpha=0.3)
 
@@ -124,13 +131,13 @@ chrom_ibd['percentage'] = (chrom_ibd['total_ibd_mb'] / chrom_ibd['total_ibd_mb']
 print("\nTotal IBD by chromosome:")
 print(chrom_ibd)
 
-# Create chromosome contribution plot
+# Chromosome contribution plot
 fig, ax = plt.subplots(figsize=(12, 6))
 bars = ax.bar(chrom_ibd['chromosome'].astype(str), chrom_ibd['total_ibd_mb'], 
               color='darkorange', alpha=0.7, edgecolor='black')
 ax.set_xlabel('Chromosome', fontsize=12)
 ax.set_ylabel('Total IBD (Mb)', fontsize=12)
-ax.set_title('Total IBD Contribution by Chromosome', fontsize=14)
+ax.set_title('Beagle IBD Contribution by Chromosome', fontsize=14)
 ax.grid(True, alpha=0.3, axis='y')
 
 # Add percentage labels
@@ -140,7 +147,31 @@ for bar, pct in zip(bars, chrom_ibd['percentage']):
             f'{pct}%', ha='center', va='bottom', fontsize=9)
 
 plt.tight_layout()
-plt.savefig(os.path.join(OUTPUT_DIR, 'ibd_by_chromosome.png'), dpi=150)
+plt.savefig(os.path.join(OUTPUT_DIR, 'beagle_ibd_by_chromosome.png'), dpi=150)
+
+# Create pi_hat distribution plots (normal and log)
+fig, axes = plt.subplots(2, 1, figsize=(14, 12))
+axes[0].hist(pair_ibd['pi_hat'], bins=50, color='steelblue', edgecolor='black', alpha=0.7)
+axes[0].set_xlabel('Pi_hat', fontsize=12)
+axes[0].set_ylabel('Number of Pairs', fontsize=12)
+axes[0].set_title('Beagle Pi_hat Values', fontsize=14)
+axes[0].grid(True, alpha=0.3)
+axes[0].axvline(pair_ibd['pi_hat'].median(), color='red', linestyle='--', 
+                label=f"Median: {pair_ibd['pi_hat'].median():.4f}")
+axes[0].axvline(pair_ibd['pi_hat'].mean(), color='green', linestyle='--', 
+                label=f"Mean: {pair_ibd['pi_hat'].mean():.4f}")
+axes[0].legend()
+
+axes[1].hist(pair_ibd['pi_hat'], bins=50, color='coral', edgecolor='black', alpha=0.7)
+axes[1].set_xlabel('Pi_hat', fontsize=12)
+axes[1].set_ylabel('Number of Pairs', fontsize=12)
+axes[1].set_title('Beagle Pi_hat Distribution (Log Scale)', fontsize=14)
+axes[1].set_yscale('log')
+axes[1].grid(True, alpha=0.3)
+
+plt.tight_layout()
+plt.savefig(os.path.join(OUTPUT_DIR, 'pi_hat_distribution.png'), dpi=150)
+print(f"Pi_hat distribution plots saved to {OUTPUT_DIR}/pi_hat_distribution.png")
 
 
 print("\nExporting results...")
@@ -179,6 +210,23 @@ with open(summary_file, 'w') as f:
     for p in [10, 25, 50, 75, 90, 95, 99]:
         percentile_val = pair_ibd['total_ibd_mb'].quantile(p/100)
         f.write(f"  {p}th percentile: {percentile_val:.3f} Mb\n")
+        
+    f.write("\n\nPI_HAT STATISTICS\n")
+    f.write("-" * 30 + "\n")
+    f.write(f"Genome length used for pi_hat: {genome_length:.0f} Mb\n")
+    f.write(f"Mean pi_hat: {pair_ibd['pi_hat'].mean():.6f}\n")
+    f.write(f"Median pi_hat: {pair_ibd['pi_hat'].median():.6f}\n")
+    f.write(f"Max pi_hat: {pair_ibd['pi_hat'].max():.6f}\n")
+    f.write(f"Min pi_hat (>0): {pair_ibd[pair_ibd['pi_hat'] > 0]['pi_hat'].min():.6f}\n\n")
+    
+    f.write("PI_HAT PERCENTILES\n")
+    f.write("-" * 30 + "\n")
+    for p in [10, 25, 50, 75, 90, 95, 99, 99.5, 99.9]:
+        percentile_val = pair_ibd['pi_hat'].quantile(p/100)
+        f.write(f"  {p}th percentile: {percentile_val:.6f}\n")
+        
+    pair_ibd[['sample_a', 'sample_b', 'total_ibd_mb', 'pi_hat']].to_csv(
+    os.path.join(OUTPUT_DIR, 'pairwise_pi_hat.csv'), index=False)
 
 print(f"  Summary statistics saved to {summary_file}")
 

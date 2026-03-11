@@ -1,7 +1,7 @@
 BEAGLE 4.1 IBD Analysis Summary
 ============================================================
 
-Analysis date: 2026-03-05 04:46
+Analysis date: 2026-03-11 02:49
 Filter settings: LOD ≥ 3.0
 
 SEGMENT STATISTICS
@@ -27,3 +27,24 @@ IBD PERCENTILES (per pair)
   90th percentile: 41.280 Mb
   95th percentile: 53.061 Mb
   99th percentile: 217.367 Mb
+
+
+PI_HAT STATISTICS
+------------------------------
+Genome length used for pi_hat: 3200 Mb
+Mean pi_hat: 0.010605
+Median pi_hat: 0.007258
+Max pi_hat: 0.798468
+Min pi_hat (>0): 0.000536
+
+PI_HAT PERCENTILES
+------------------------------
+  10th percentile: 0.004014
+  25th percentile: 0.005369
+  50th percentile: 0.007258
+  75th percentile: 0.009585
+  90th percentile: 0.012900
+  95th percentile: 0.016582
+  99th percentile: 0.067927
+  99.5th percentile: 0.122685
+  99.9th percentile: 0.600149
