@@ -6,3 +6,4 @@ data/
 *.log
 *.nosex
 *.match
+results/germline_lengths.txt
