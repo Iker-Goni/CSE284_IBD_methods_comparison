@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import gzip
 import glob
 import os
+import numpy as np
 
 # Configure paths and gather files
 BEAGLE_DIR = "data/beagle"
@@ -67,7 +68,7 @@ def merge_intervals(df):
 print("Calculating IBD sharing")
 
 # Group by pair and chromosome to merge within genomic regions
-df_filtered['pair_key'] = df_filtered.apply(lambda row: tuple(sorted([row['sample1'], row['sample2']])), axis=1)
+df_filtered['pair_key'] = list(map(tuple, np.sort(df_filtered[['sample1','sample2']].values, axis=1)))
 pair_chrom_groups = df_filtered.groupby(['pair_key', 'chrom'])
 merged_data = pair_chrom_groups.apply(merge_intervals).reset_index(name='merged_mb')
 

@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import gzip
 import glob
 import os
+import numpy as np
 
 # Configure paths and gather files
 GERMLINE_FILE = "results/germline_out.match"
@@ -10,7 +11,7 @@ OUTPUT_DIR = "results/germline"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 colnames = [
-    "id1","hap1","id2","hap2","chr","start","end",
+    "fid1","iid1","fid2","iid2","chr","start","end",
     "snp1","snp2","nsnp","length_mb","unit",
     "err1","err2","err3"
            ]
@@ -47,7 +48,8 @@ def merge_intervals(df):
 print("Calculating IBD sharing")
 
 # Group by pair and chromosome to merge within genomic regions
-df['pair_key'] = df.apply(lambda row: tuple(sorted([row['id1'], row['id2']])), axis=1)
+df = df[df['iid1'] != df['iid2']]
+df['pair_key'] = list(map(tuple, np.sort(df[['iid1','iid2']].values, axis=1)))
 pair_chrom_groups = df.groupby(['pair_key', 'chr'])
 merged_data = pair_chrom_groups.apply(merge_intervals).reset_index(name='merged_mb')
 
