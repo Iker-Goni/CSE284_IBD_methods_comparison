@@ -1,27 +1,48 @@
 Germline IBD Analysis Summary
 ============================================================
 
-Analysis date: 2026-03-05 05:46
+Analysis date: 2026-03-11 05:50
 SEGMENT STATISTICS
 ------------------------------
-Total segments detected: 20,218,066
-Mean segment length: 154.702 Mb
-Median segment length: 146.293 Mb
-Total IBD across all segments: 3127768102.95 Mb
+Total segments detected: 8,475,216
+Mean segment length: 0.013 Mb
+Median segment length: 0.000 Mb
+Total IBD across all segments: 107442.43 Mb
 
 PAIRWISE STATISTICS
 ------------------------------
 Total pairs with IBD: 4,656
-Mean IBD per pair: 12.802 Mb
-Median IBD per pair: 24.137 Mb
-Max IBD per pair: 161.962 Mb
+Mean IBD per pair: 23.076 Mb
+Median IBD per pair: 28.181 Mb
+Max IBD per pair: 181.606 Mb
 
 IBD PERCENTILES (per pair)
 ------------------------------
-  10th percentile: 0.000 Mb
-  25th percentile: 0.000 Mb
-  50th percentile: 24.137 Mb
-  75th percentile: 25.043 Mb
-  90th percentile: 25.242 Mb
-  95th percentile: 25.406 Mb
-  99th percentile: 28.142 Mb
+  10th percentile: 3.051 Mb
+  25th percentile: 8.052 Mb
+  50th percentile: 28.181 Mb
+  75th percentile: 30.964 Mb
+  90th percentile: 34.280 Mb
+  95th percentile: 36.357 Mb
+  99th percentile: 41.325 Mb
+
+
+PI_HAT STATISTICS
+------------------------------
+Genome length used for pi_hat: 3200 Mb
+Mean pi_hat: 0.007211
+Median pi_hat: 0.008807
+Max pi_hat: 0.056752
+Min pi_hat (>0): 0.000938
+
+PI_HAT PERCENTILES
+------------------------------
+  10th percentile: 0.000954
+  25th percentile: 0.002516
+  50th percentile: 0.008807
+  75th percentile: 0.009676
+  90th percentile: 0.010712
+  95th percentile: 0.011361
+  99th percentile: 0.012914
+  99.5th percentile: 0.015030
+  99.9th percentile: 0.032499

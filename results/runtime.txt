@@ -1,0 +1,18 @@
+Runtime and Peak Memory
+
+python3 scripts/timer.py ./scripts/compute_ibd_plink.sh
+--- Metrics ---
+Runtime: 1.26 seconds
+Peak Memory: 51104 KB
+
+
+python3 scripts/timer.py ./scripts/beagle_ibd.sh
+--- Metrics ---
+Runtime: 189.41 seconds
+Peak Memory: 1032292 KB
+
+
+python3 scripts/timer.py ./scripts/germline.sh
+--- Metrics ---
+Runtime: 75.46 seconds
+Peak Memory: 54832 KB

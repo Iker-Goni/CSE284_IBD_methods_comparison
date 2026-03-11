@@ -16,9 +16,8 @@ colnames = [
     "err1","err2","err3"
            ]
 
-raw_df = pd.read_csv(GERMLINE_FILE, sep=r"\s+", names=colnames)
-raw_df['length_mb'] = (raw_df["end"] - raw_df["start"]) / 1000000
-df = raw_df[raw_df['length_mb'] >= 0.001]
+df = pd.read_csv(GERMLINE_FILE, sep=r"\s+", names=colnames)
+df['length_mb'] = (df["end"] - df["start"]) / 1000000
 print(f"\nTotal segments read: {len(df):,}")
 print(f"Mean segment length: {df['length_mb'].mean():.3f} Mb")
 print(f"Median segment length: {df['length_mb'].median():.3f} Mb")
