@@ -23,14 +23,14 @@ for chr in {1..22}; do
     OUT_FILE="${GERMLINE_OUT_PREFIX}_chr${chr}"
     
     # Run GERMLINE
-    data/germline/germline \
+    tools/germline/germline \
       -input $PED_FILE $MAP_FILE \
       -output $OUT_FILE \
       -bits $BITS \
       -min_m $MIN_M
 done
 
-echo "=== Optional: Combine all chromosome match files ==="
+echo "=== Combine all chromosome match files ==="
 COMBINED_MATCH="${GERMLINE_OUT_PREFIX}_allchr.match"
 cat ${GERMLINE_OUT_PREFIX}_chr*.match > $COMBINED_MATCH
 echo "Combined match file created: $COMBINED_MATCH"

@@ -40,7 +40,7 @@ with open(germline_file) as f:
         pair = tuple(sorted([id1, id2]))
         germline_ibd[pair] += length_mb
 
-GENOME_MB = 3400.0
+GENOME_MB = 3200.0
 for pair in germline_ibd:
     germline_ibd[pair] /= GENOME_MB
 

@@ -1,48 +1,48 @@
 Germline IBD Analysis Summary
 ============================================================
 
-Analysis date: 2026-03-11 05:50
+Analysis date: 2026-03-12 04:21
 SEGMENT STATISTICS
 ------------------------------
-Total segments detected: 8,475,216
-Mean segment length: 0.013 Mb
-Median segment length: 0.000 Mb
-Total IBD across all segments: 107442.43 Mb
+Total segments detected: 93,253
+Mean segment length: 6.905 Mb
+Median segment length: 4.773 Mb
+Total IBD across all segments: 643866.24 Mb
 
 PAIRWISE STATISTICS
 ------------------------------
 Total pairs with IBD: 4,656
-Mean IBD per pair: 23.076 Mb
-Median IBD per pair: 28.181 Mb
-Max IBD per pair: 181.606 Mb
+Mean IBD per pair: 138.287 Mb
+Median IBD per pair: 136.241 Mb
+Max IBD per pair: 1285.567 Mb
 
 IBD PERCENTILES (per pair)
 ------------------------------
-  10th percentile: 3.051 Mb
-  25th percentile: 8.052 Mb
-  50th percentile: 28.181 Mb
-  75th percentile: 30.964 Mb
-  90th percentile: 34.280 Mb
-  95th percentile: 36.357 Mb
-  99th percentile: 41.325 Mb
+  10th percentile: 98.514 Mb
+  25th percentile: 116.328 Mb
+  50th percentile: 136.241 Mb
+  75th percentile: 156.291 Mb
+  90th percentile: 172.081 Mb
+  95th percentile: 181.369 Mb
+  99th percentile: 205.458 Mb
 
 
 PI_HAT STATISTICS
 ------------------------------
 Genome length used for pi_hat: 3200 Mb
-Mean pi_hat: 0.007211
-Median pi_hat: 0.008807
-Max pi_hat: 0.056752
-Min pi_hat (>0): 0.000938
+Mean pi_hat: 0.043215
+Median pi_hat: 0.042575
+Max pi_hat: 0.401740
+Min pi_hat (>0): 0.014426
 
 PI_HAT PERCENTILES
 ------------------------------
-  10th percentile: 0.000954
-  25th percentile: 0.002516
-  50th percentile: 0.008807
-  75th percentile: 0.009676
-  90th percentile: 0.010712
-  95th percentile: 0.011361
-  99th percentile: 0.012914
-  99.5th percentile: 0.015030
-  99.9th percentile: 0.032499
+  10th percentile: 0.030786
+  25th percentile: 0.036352
+  50th percentile: 0.042575
+  75th percentile: 0.048841
+  90th percentile: 0.053775
+  95th percentile: 0.056678
+  99th percentile: 0.064206
+  99.5th percentile: 0.080848
+  99.9th percentile: 0.344227

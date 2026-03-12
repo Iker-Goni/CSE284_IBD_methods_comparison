@@ -38,7 +38,7 @@ plink \
   --out ${LD_PREFIX}
 
 echo "=== Step 5: Phase with Beagle ==="
-java -jar data/beagle.27Feb25.75f.jar \
+java -jar tools/beagle/beagle.27Feb25.75f.jar \
   gt=${LD_PREFIX}.vcf \
   out=${PHASE_PREFIX}
 

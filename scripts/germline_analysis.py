@@ -6,7 +6,7 @@ import os
 import numpy as np
 
 # Configure paths and gather files
-GERMLINE_FILE = "data/lwk_ibd.match"
+GERMLINE_FILE = "data/lwk_ibd_allchr.match"
 OUTPUT_DIR = "results/germline"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
