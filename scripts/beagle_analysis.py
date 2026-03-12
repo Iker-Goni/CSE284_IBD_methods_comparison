@@ -4,7 +4,6 @@ import gzip
 import glob
 import os
 import numpy as np
-from scipy import stats
 
 # Configure paths and gather files
 BEAGLE_DIR = "data/beagle"
