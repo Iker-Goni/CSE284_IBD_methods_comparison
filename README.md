@@ -5,13 +5,14 @@ The goal of this project is to compare the IBD analysis of 3 tools: plink 1.9, g
 
 
 ## Data
-The dataset that we will be analyzing is the 1000 Genomes Phase 3 release, consisting of 2504 individuals from 26 different populations. Our analysis will focus on the subset of individuals from the LWK population. This dataset uses the GRCh37 reference genome and includes VCF files for every chromosome containing genotype information regarding variants for every individual. Individuals were sequenced with whole-genome sequencing with a mean depth of 7.4x and targeted exome sequencing with a mean depth of 65.7x. 
+The dataset that we will be analyzing is the 1000 Genomes Phase 3 release, consisting of 2504 individuals from 26 different populations. Our analysis will focus on the subset of individuals from the LWK population, which consists of 97 individuals and 911045 SNPs. This dataset uses the GRCh37 reference genome and includes VCF files for every chromosome containing genotype information regarding variants for every individual. Individuals were sequenced with whole-genome sequencing with a mean depth of 7.4x and targeted exome sequencing with a mean depth of 65.7x. 
 
 
 ## Dependencies
 ```
 pip install matplotlib
 pip install pandas
+pip install numpy
 ```
 plink v1.9, germline, Beagle 4.1, and Beagle 5.5 are also required. Follow the steps below for installation.
 
