@@ -17,7 +17,10 @@ pip install numpy
 plink v1.9, germline, Beagle 4.1, and Beagle 5.5 are also required. Follow the steps below for installation.
 
 ## Instructions to reproduce results
-For reference, all scripts should be run from the root directory (unless otherwise specified) in order to run properly. Download plink v1.9, germline, Beagle 4.1, and Beagle 5.5 from their respective websites and store them in a directory ```tools/```. 
+For reference, all scripts should be run from the root directory (unless otherwise specified) in order to run properly. Download plink v1.9, germline, Beagle 4.1, and Beagle 5.5 by running:
+```
+bash scripts/install_tools.sh
+```
 
 ### Obtain VCF file
 We started with the ps2 data from problem 3 in .bed, .bim, and .fam format, which you can find in ```data/```. First the data must be converted to a VCF file:
@@ -26,6 +29,7 @@ plink --bfile data/ps2_ibd.lwk --recode vcf --out data/ps2_ibd.lwk
 ```
 
 ### Get and process map files
+Instructions to get and process the map files. They are located in ```data/maps/``` for your convenience. Below are the scripts used to obtain the map files:
 The GRCh37 map was obtained through the Beagle website:
 ```
 wget -O  data/maps/plink.GRCh37.map.zip https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh37.map.zip
@@ -37,48 +41,39 @@ for file in plink.chr*.GRCh37.map; do \
      mv "$file" "chr${chr}.map" \
      echo "Renamed $file to chr${chr}.map" \
  done
-```
-```
 cat chr{1..22}.map > combined_map.map
 ```
 
 ### Phase VCF file
-Our VCF file was phased with Beagle 5.5. Navigate back to the home directory and run the ```phase.sh``` script.
+Our VCF file was phased with Beagle 5.5. The phased .gz vcf has already been generated for your convenience in ```data/```. Below are instructions to phase the data using Beagle:
+Navigate back to the root directory and run the ```phase.sh``` script.
 ```
 bash scripts/phase.sh
 ```
 
-### Convert VCF to .ped file for germline and run germline
+### Convert VCF to .ped file for germline
 ```
-bash scripts/germline_pipeline.sh
-```
-This script creates a file called germline_input.ped in the data folder. Note that the data folder in this repository contains the .gz file for data/germline_input.ped as this file is too large for git to push. If you wish to unzip this file and begin the analysis from this step without running the above commands, run the bash command:
-```
-gunzip data/germline_input.ped.gz
-```
-and continue from here.
-### Compute IBD with the other 2 tools
-```
-bash scripts/beagle_ibd.sh
-bash scripts/compute_ibd_plink.sh
+bash scripts/germline_preprocess.sh
 ```
 
+### Compute IBD with the 3 tools and measure runtime + peak memory
+```
+python3 scripts/timer.py ./scripts/compute_ibd_plink.sh
+python3 scripts/timer.py ./scripts/germline.sh
+python3 scripts/timer.py ./scripts/beagle_ibd.sh
+```
+The runtime and peak memory results of our analysis are stored in ```results/runtime.txt```.
 ### Analyze results
 ```
 python3 scripts/beagle_analysis.py
 python3 scripts/germline_analysis.py
-python3 plot_pihat_distribution.py
+python3 scripts/plot_plink_pihat_dist.py
+python3 scripts/combine_ibd_results.py
+python3 scripts/ibd_tool_difference.py
+python3 scripts/plot_ibd_comparison.py
 ```
 
-## Results so far
+## Results
 Currently we have computed the pi_hat distributions using plink, as well as cumulative IBD distribution from Beagle:
-![pi_hat distribution](results/pihat_distribution.png)
 ![beagle_distribution](results/beagle/cumulative_ibd_distribution.png)
 
-## Remaining work to complete
-There is currently a large discrepancy between the total number of segments, mean segment length, median segment length, and max segment length computed by germline as opposed to Beagle. We believe it is an issue with the input .ped file and will work to correct it. Some other future steps include:
-- Comparing runtime of each method
-- Estimating pi_hat from germline and Beagle results and comparing to plink
-- Further analyzing the 3 methods in terms of their IBD outputs
-- Reorganize confusing file paths and output locations
-- Update readme with the new results and guidance of peer reviewers
