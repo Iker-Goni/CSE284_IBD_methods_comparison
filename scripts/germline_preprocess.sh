@@ -38,7 +38,7 @@ plink \
   --out ${LD_PREFIX}
 
 echo "=== Step 5: Phase with Beagle ==="
-java -jar tools/beagle/beagle.27Feb25.75f.jar \
+java -jar data/beagle.27Feb25.75f.jar \
   gt=${LD_PREFIX}.vcf \
   out=${PHASE_PREFIX}
 
@@ -53,3 +53,13 @@ plink \
   --out ${PHASE_PREFIX}
 
 echo "Preprocessing and phasing completed. Output: ${PHASE_PREFIX}.ped and ${PHASE_PREFIX}.map"
+
+# --- Subset phased PED/MAP per chromosome ---
+for chr in {1..22}; do
+    echo "Subsetting chromosome $chr..."
+    plink \
+      --file ${PHASE_PREFIX} \
+      --chr $chr \
+      --recode ped \
+      --out ${PHASE_PREFIX}_chr${chr}
+done

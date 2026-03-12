@@ -4,7 +4,7 @@ from collections import defaultdict
 
 # -------- FILE PATHS --------
 plink_file = "results/plink_ibd.genome"
-germline_file = "results/lwk_ibd.match"
+germline_file = "data/lwk_ibd_allchr.match"
 beagle_file = "results/beagle/pairwise_pi_hat.csv"
 output_file = "results/combined_ibd_table.csv"
 
