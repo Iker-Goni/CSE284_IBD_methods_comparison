@@ -72,8 +72,22 @@ python3 scripts/combine_ibd_results.py
 python3 scripts/ibd_tool_difference.py
 python3 scripts/plot_ibd_comparison.py
 ```
-
+Various plots and .csv files are available in the ```results/``` folder, the most important of which are displayed below in the Results section. Results for each tool are separated into their respective folders bearing the tool's name.
 ## Results
-Currently we have computed the pi_hat distributions using plink, as well as cumulative IBD distribution from Beagle:
-![beagle_distribution](results/beagle/cumulative_ibd_distribution.png)
+We computed runtime and peak memory for each of the three tools:
+
+|  | Runtime (s) | Peak Memory (kb) |
+| --- | --- | --- |
+| Plink | 1.26 | 51104 |
+| Germline | 75.46 | 54832 |
+| Beagle | 189.41 | 1032292 |
+
+Below are the following cumulative IBD segment length distributions for each of the 3 tools. 
+![plink](results/plink/plink_pihat_distribution.png)
+![germline](results/germline/cumulative_ibd_distribution.png)
+![beagle](results/beagle/cumulative_ibd_distribution.png)
+
+We then compared the PI_HAT result of the tools on a pairwise basis. PI_HAT for Plink was taken directly from the output of the tool. For Beagle and Germline, it was computed as the sum of IBD segment lengths divided by the genome length, which we assumed was 3200 Mb. At lower values of PI_HAT, the 3 tools perform similarly, but at higher PI_HAT values, Germline underpredicted compared to Plink, while Beagle overpredicted compared to Plink.
+
+![comparison](results/ibd_scatter_plots_3way_thresholded.png)
 
