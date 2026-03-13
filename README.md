@@ -72,7 +72,7 @@ python3 scripts/combine_ibd_results.py
 python3 scripts/ibd_tool_difference.py
 python3 scripts/plot_ibd_comparison.py
 ```
-Various plots and .csv files are available in the ```results/``` folder, the most important of which are displayed below in the Results section. Results for each tool are separated into their respective folders bearing the tool's name.
+Various plots and .csv files are available in the ```results/``` folder, the most important of which are displayed below in the Results section. Results for each tool are separated into their respective folders bearing the tool's name. For Beagle and Germline, those results include IBD by chromosome, cumulative IBD distribution, IBD summary statistics, pairwise IBD sharing, pairwise PI_HAT, and PI_HAT distribution.
 ## Results
 We computed runtime and peak memory for each of the three tools:
 
